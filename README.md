@@ -5,4 +5,4 @@ A simple version of Chinese Morra (Rock, paper, scissors) in Javascript.
 Preview of the short and simple game
 
 ### Demo
-An online demo of the Project can be [viewed and tested](https://www.hackworld.it/demo/rockps/).
+An online demo of the Game can be [viewed and tested](https://www.hackworld.it/demo/rockps/).
