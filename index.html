@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Rock Paper Scissor</title>
+        <style type="text/css">
+            
+            #imgplay, #imgnpc {width: 36px; height: 36px; text-align: center; clear: both; margin: 0 auto;}
+            #imgplay > img, #imgnpc > img {border: 0px; width: 36px; height: 36px;}
+            table#tableChallenge {width: 250px; border: 1px solid #CCC; clear: both; margin-top: 5px;}
+            table#tableChallenge > thead > tr > th { border-bottom:1px solid #CCC; text-align: center; }
+            table#tableChallenge > tbody > tr > td { text-align: center; vertical-align: middle; align-items: center; align-content: center; }
+            table#tableChallenge > tbody > tr > td#tvs { text-align: center; vertical-align: middle; align-items: center; align-content: center; font-weight:bold; }
+
+            table#hmnbutton { width: 250px; border: 0; clear: both; margin-top: 5px; margin-bottom: 5px; display: none; }
+            table#hmnbutton > tbody > tr > td { width: 25%; }
+
+            table#tbrep { width: 250px; border: 1px solid #CCC; clear: both; margin-top: 5px; margin-bottom: 5px; font-size: 12px;  }
+            table#tbrep > thead > tr > th { background-color: #E0E0E0; }
+            table#tbrep > thead > tr > th.acm { width: 25%; text-align: center; }
+            table#tbrep > thead > tr > th.lsm { width: 50%; text-align: center; }
+            table#tbrep > tbody > tr > td { text-align: center; border-top: 1px solid #CCC; border-right: 1px solid #CCC; vertical-align: middle; }
+            table#tbrep > tbody > tr > td:last-child { border-right: 0; }
+
+            .tvc { width: 45%; }
+            .timg {border: 0px; width: 36px; height: 36px;}
+            .tcnt {border: 0px; width: 22px; height: 22px;}
+            #result {font-weight: bold; width: 250px;}
+            #report {text-align: left;}
+
+        </style>
+    </head>
+    <body>
+
+        <center>
+
+            <table cellpadding="3" cellspacing="0" id="bxbutton">
+                <tbody>
+                    <tr>
+                        <td><input type="button" class="actgame" data-type="ones" value="One Shot" /></td>
+                        <td><input type="button" class="actgame" data-type="cnts" value="Contest" /></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table cellpadding="3" cellspacing="0" id="hmnbutton">
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="button" class="humansl" data-type="rock" value="Rock" />
+                        </td>
+                        <td>
+                            <input type="button" class="humansl" data-type="paper" value="Paper" />
+                        </td>
+                        <td>
+                            <input type="button" class="humansl" data-type="scissor" value="Scissor" />
+                        </td>
+                        <td>
+                            <input type="button" class="humansl" data-type="slrndm" value="Random" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table cellpadding="3" cellspacing="0" id="tableChallenge">
+                <thead>
+                    <tr>
+                        <th class="tvc">Human</th>
+                        <th id="vrs">vs</th>
+                        <th class="tvc">Computer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="cntHuman"></td>
+                        <td id="tvs"></td>
+                        <td id="cntMachine"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br />
+
+            <div id="result"></div>
+
+        </center>
+
+        <script src="./assets/js/rps.js"></script>
+    </body>
+</html>
